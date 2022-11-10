@@ -1,6 +1,5 @@
 import config from "../config.json"
 import styled from "styled-components";
-import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import React from "react";
@@ -13,12 +12,12 @@ function HomePage() {
 
     return (
         <>
-            <CSSReset />
+           
             <div style={{
                 display: "flex",
                 flexDirection: "column",
                 flex: 1,
-                backgroundColor: "white",
+               // backgroundColor: "white",
             }}>
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
@@ -39,6 +38,7 @@ export default HomePage
 } */
 
 const StyledHeader = styled.div` 
+     background-color: ${({ theme }) => theme.backgroundLevel1};
     img{
         width: 80px;
         height: 80px;
@@ -47,7 +47,7 @@ const StyledHeader = styled.div`
     .user-info {
         //margin-top: 50px;
         display: flex;
-        align-content: center;
+        align-items: center;
         width: 100%;
         padding: 16px 32px;
         gap: 16px;
@@ -59,6 +59,7 @@ const StyledBanner = styled.div`
     height: 250px;
 `;
 function Header() {
+   
     return (
         <StyledHeader>
             <StyledBanner />
