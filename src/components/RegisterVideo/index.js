@@ -23,7 +23,7 @@ export default function RegisterVideo() {
     const formCadastro = useForm({
         initialValues:{ titulo: "tinker", url: "http://youtube.." } 
     });
-    const [formVisivel, setFormVisivel] = React.useState(true);
+    const [formVisivel, setFormVisivel] = React.useState(false);
     
     
     // Botão add video

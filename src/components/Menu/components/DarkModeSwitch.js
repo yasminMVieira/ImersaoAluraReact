@@ -42,8 +42,10 @@ export default function DarkModeSwitch() {
     <StyledSwitch>
       <input id="darkmode" type="checkbox" onChange={() => {
         // aqui posso usar uma function "toggleMode", no arq ColorMode 
+        if (contexto.mode == "pink") contexto.setMode("dark"); 
         if (contexto.mode == "dark") contexto.setMode("light");     
-        if (contexto.mode == "light") contexto.setMode("dark");     
+        if (contexto.mode == "light") contexto.setMode("dark"); 
+      
         
       }} />
       <label

@@ -18,6 +18,13 @@ const theme = {
         backgroundLevel2: "#313131",
         borderBase: "#383838",
         textColorBase: "#FFFFFF",
+    },
+    pink: {
+        backgroundBase: "#D49BA7",
+        backgroundLevel1: "#DAABB5",
+        backgroundLevel2: "#EFC3CA",
+        borderBase: "#EEDAE5",
+        textColorBase: "#222222",
     }
 };
 
@@ -26,7 +33,7 @@ const theme = {
 // ColorModeProvider -> prover o state de light ou dark para todo o app
 function ProviderWrapper(props) {
     return(
-        <ColorModeProvider initialMode = {"dark"}> 
+        <ColorModeProvider initialMode = {"pink"}> 
             {props.children}
         </ ColorModeProvider>
     )   
